@@ -17,7 +17,7 @@ const videos = [
 
 export default function VideoFeed() {
   return (
-    <section className="px-4 space-y-6">
+    <section className="px-4 md:px-0 grid grid-cols-1 gap-6 md:grid-cols-2">
       {videos.map((video, index) => (
         <VideoItem
           key={index}
