@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function WatchPage() {
   return (
-    <main className="px-4 md:px-0 py-6 space-y-4">
+    <main className="px-4 md:px-0 py-6 space-y-6">
       <Link
         href="/"
         className="text-sm text-neutral-600 hover:underline"
@@ -10,13 +10,27 @@ export default function WatchPage() {
         ← Back
       </Link>
 
-      <h1 className="text-lg font-semibold">
-        Watch Page
-      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Video + details */}
+        <div className="md:col-span-2 space-y-4">
+          <div className="aspect-video bg-neutral-200 rounded-lg" />
 
-      <p className="text-sm text-neutral-600">
-        Video player and details will go here.
-      </p>
+          <h1 className="text-base font-semibold">
+            Video title goes here
+          </h1>
+
+          <p className="text-sm text-neutral-600">
+            Channel name • view count
+          </p>
+        </div>
+
+        {/* Sidebar */}
+        <aside className="space-y-4">
+          <div className="h-24 bg-neutral-100 rounded-lg" />
+          <div className="h-24 bg-neutral-100 rounded-lg" />
+          <div className="h-24 bg-neutral-100 rounded-lg" />
+        </aside>
+      </div>
     </main>
   );
 }
