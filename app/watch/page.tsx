@@ -1,4 +1,5 @@
 import Link from "next/link";
+import VideoPlayer from "@/components/watch/VideoPlayer";
 
 export default function WatchPage() {
   return (
@@ -13,7 +14,7 @@ export default function WatchPage() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Video + details */}
         <div className="md:col-span-2 space-y-4">
-          <div className="aspect-video bg-neutral-200 rounded-lg" />
+         <VideoPlayer />
 
           <h1 className="text-base font-semibold">
             Video title goes here
