@@ -1,5 +1,5 @@
 import Link from "next/link";
-import VideoPlayer from "@/components/watch/VideoPlayer";
+import VideoPlayer from "@/components/video/VideoPlayer";
 
 export default function WatchPage() {
   return (

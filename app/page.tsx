@@ -1,6 +1,6 @@
-import Header from "@/components/landing/Header";
-import Hero from "@/components/landing/Hero";
-import VideoFeed from "@/components/landing/VideoFeed";
+import Header from "@/components/layout/Header";
+import Hero from "@/components/layout/Hero";
+import VideoFeed from "@/components/video/VideoFeed";
 
 export default function HomePage() {
   return (

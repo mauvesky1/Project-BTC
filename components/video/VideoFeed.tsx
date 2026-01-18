@@ -1,4 +1,4 @@
-import VideoItem from "@/components/landing/VideoItem";
+import VideoItem from "@/components/video/VideoItem";
 
 const videos = [
   {
