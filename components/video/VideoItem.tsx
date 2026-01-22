@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 type VideoItemProps = {
+  id: string;
   title: string;
   channel: string;
 };

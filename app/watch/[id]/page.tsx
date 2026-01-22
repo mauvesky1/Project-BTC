@@ -1,5 +1,7 @@
 import Link from "next/link";
 import VideoPlayer from "@/components/video/VideoPlayer";
+import RelatedVideos from "@/components/video/RelatedVideos";
+
 
 export default function WatchPage() {
   return (
@@ -27,9 +29,7 @@ export default function WatchPage() {
 
         {/* Sidebar */}
         <aside className="space-y-4">
-          <div className="h-24 bg-neutral-100 rounded-lg" />
-          <div className="h-24 bg-neutral-100 rounded-lg" />
-          <div className="h-24 bg-neutral-100 rounded-lg" />
+         <RelatedVideos />
         </aside>
       </div>
     </main>
