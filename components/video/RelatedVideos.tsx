@@ -15,7 +15,7 @@ const relatedVideos = [
 
 export default function RelatedVideos() {
   return (
-    <div className="space-y-4">
+    <div className="space-y-3">
       {relatedVideos.map((video) => (
         <VideoItem
           key={video.id}

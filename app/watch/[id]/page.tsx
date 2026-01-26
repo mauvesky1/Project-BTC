@@ -5,7 +5,7 @@ import RelatedVideos from "@/components/video/RelatedVideos";
 
 export default function WatchPage() {
   return (
-    <main className="px-4 md:px-0 py-6 space-y-6">
+    <main className="px-3 md:px-0 py-6 space-y-6">
       <Link
         href="/"
         className="text-sm text-neutral-600 hover:underline"

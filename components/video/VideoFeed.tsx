@@ -1,28 +1,22 @@
 import VideoItem from "@/components/video/VideoItem";
 
-const videos = [
-  {
-    id: "1",
-    title: "Learn Next.js in 10 Minutes",
-    channel: "Code Academy",
-    views: "120K views",
-    thumbnail: "/thumb1.jpg",
-  },
-  {
-    id: "2",
-    title: "Build a YouTube Clone",
-    channel: "Dev Simplified",
-    views: "89K views",
-    thumbnail: "/thumb2.jpg",
-  },
-];
+const videos = Array.from({ length: 12 }).map((_, i) => ({
+  id: String(i),
+  title: `Video ${i + 1}`,
+  channel: "Test Channel",
+}));
+
 
 export default function VideoFeed() {
   return (
-    <section className="px-4 md:px-0 grid grid-cols-1 gap-6 md:grid-cols-2">
-      {videos.map((video, index) => (
+// <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+
+      {videos.map((video) => (
         <VideoItem
           key={video.id}
+          id={video.id}
           title={video.title}
           channel={video.channel}
         />
