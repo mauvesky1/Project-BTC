@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="w-full border-b border-neutral-200 bg-white">
+    <header className="w-full border-b border-neutral-200 bg-white sticky top-0 z-50">
       <div className="mx-auto flex h-14 max-w-6xl items-center gap-4 px-4">
         {/* Mobile menu */}
         <button
@@ -25,7 +25,13 @@ export default function Header() {
         </div>
 
         {/* Right-side placeholder */}
-        <div className="hidden md:block w-24" />
+        {/* Right-side placeholder */}
+<div className="hidden md:flex items-center gap-4">
+  <div className="w-6 h-6 bg-neutral-300 rounded-full" /> {/* Example: upload */}
+  <div className="w-6 h-6 bg-neutral-300 rounded-full" /> {/* Example: notifications */}
+  <div className="w-6 h-6 bg-neutral-300 rounded-full" /> {/* Example: profile */}
+</div>
+
       </div>
     </header>
   );
