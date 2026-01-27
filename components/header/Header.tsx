@@ -12,7 +12,7 @@ export default function Header() {
 
         {/* Logo */}
         <div className="text-lg font-semibold whitespace-nowrap">
-          YouTube
+          YourTube
         </div>
 
         {/* Search (desktop only) */}
