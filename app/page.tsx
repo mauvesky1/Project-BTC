@@ -3,12 +3,13 @@ import VideoFeed from "@/components/video/VideoFeed";
 
 export default function HomePage() {
   return (
-     // <main className="min-h-screen flex justify-center">
-     // <div className="w-full max-w-md space-y-6">
-     <div className="w-full px-4">
+     <div className="flex">
+     <div className="flex-1 px-4 md:px-6">
         <Hero />
-        <VideoFeed />
+        <div className="outline outline-red-500">
+            <VideoFeed />
+        </div>
       </div>
-   //  </main>
+      </div>
   );
 }

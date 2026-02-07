@@ -8,7 +8,7 @@ type VideoItemProps = {
 
 export default function VideoItem({ title, channel }: VideoItemProps) {
   return (
-    <div className="space-y-2">
+    <div className="w-full space-y-2">
       <Link href="/watch">
         <div className="aspect-video bg-neutral-200 rounded-lg cursor-pointer" />
       </Link>
